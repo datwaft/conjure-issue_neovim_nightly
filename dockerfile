@@ -10,7 +10,7 @@ RUN tar xzf nvim-linux64.tar.gz -C /opt
 ENV PATH /opt/nvim-linux64/bin:$PATH
 
 # Install Conjure
-RUN git clone https://github.com/Olical/conjure /root/.local/share/nvim/site/pack/packer/start/conjure
+RUN git clone https://github.com/Olical/conjure --branch develop /root/.local/share/nvim/site/pack/packer/start/conjure
 
 # Inject configuration
 COPY config /root/.config/nvim
